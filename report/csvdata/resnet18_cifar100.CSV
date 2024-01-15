@@ -1,0 +1,13 @@
+predictor,score_function,coverage_rate,average_size
+SplitPredictor,THR,0.89925,16.645
+ClusterPredictor,THR,0.89925,16.64625
+ClassWisePredictor,THR,0.901,16.52225
+SplitPredictor,APS,0.900875,21.9505
+ClusterPredictor,APS,0.898625,21.552
+ClassWisePredictor,APS,0.902625,21.554125
+SplitPredictor,SAPS(weight=0.2),0.902,18.389875
+ClusterPredictor,SAPS(weight=0.2),0.9045,18.990625
+ClassWisePredictor,SAPS(weight=0.2),0.90075,18.893375
+SplitPredictor,"RAPS(1,0)",0.90125,19.169625
+ClusterPredictor,"RAPS(1,0)",0.903125,19.38575
+ClassWisePredictor,"RAPS(1,0)",0.901375,19.368
