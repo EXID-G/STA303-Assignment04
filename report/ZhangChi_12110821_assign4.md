@@ -4,7 +4,7 @@
 
 **SID：** 12110821
 
-**Link of pull request: **
+**Link of pull request: **[https://github.com/SustechSTA303/STA303-Assignment04/pull/53](https://github.com/SustechSTA303/STA303-Assignment04/pull/53)
 
 
 
@@ -72,7 +72,7 @@ The accuracy of two models in two datasets’ testing dataloaders is shown in th
 |  ResNet18   |         42.95%          |           85.32%           |
 | DenseNet121 |         49.66%          |           83.91%           |
 
-There are 2 metrics used in my experiment, coverage rate and average size.  The former means the probability of a model’s prediction containing the correct class, measured by dividing the number of predictions containing the correct class by the total number of predictions. The latter indicates the average size of the prediction interval, with the significant level in 0.01. It is obvious that the the bigger the coverage rate and the smaller the average size be better.
+There are 2 metrics used in my experiment, coverage rate and average size.  The former means the probability of a model’s prediction containing the correct class, measured by dividing the number of predictions containing the correct class by the total number of predictions. The latter indicates the average size of the prediction interval, with the significant level of 0.01. It is obvious that the the bigger the coverage rate and the smaller the average size be better.
 
 ###  Experiment  Results
 
@@ -82,7 +82,7 @@ For each of 4 models ( `densenet121_cifar100, densenet121_fashionmnist, resnet18
 
 Firstly look at the overall situation of the four models in two values. Comparing the abscissa of the four graphs, we can find that the **coverage rate of the four models is from 0.89 to 0.90, which is not much different**. Compared with the vertical axis, **the running model on CIFAR-100’s average size will be larger** than the model running on FashionMNIST (CIFAR-100 is more difficult for classification with 100 classes), and the `densenet121_cifar100 `performs better than `resnet18_cifar100`, with average size of 11 to 14.5 overall smaller than 17 to 22.
 
-Next, we compare the influence of different score functions and predictors on the two indicators. In the model tested by the FashionMNIST dataset (the above two figures), the prediction interval size is within 1.5, and both of them perform well (the data is relatively simple), so there is no obvious regularity. It is worth mentioning that `ClassWisePredictor `(purple dot) always appears on the right and top of the image, denoting that the value of two metrics will be higher than other methods. In the next two graphs, we can see that different symbols have different distributions for average size, showing the characteristics of APS > RAPS(1,0) > SAPS(weight=0.2) > THR, and the values are from high to low.
+Next, we compare the influence of different score functions and predictors on the two indicators. In the model tested by the FashionMNIST dataset (the above two figures), the prediction interval size is within 1.5, and both of them perform well (the data is relatively simple), so there is no obvious regularity. It is worth mentioning that `ClassWisePredictor `(purple dot) always appears on the right and top of the image, denoting that the value of two metrics will be higher than other methods. In the next two graphs, we can see that **different symbols have different distributions for average size, showing the characteristics of APS > RAPS(1,0) > SAPS(weight=0.2) > THR, and the values are from high to low.**
 
 
 
@@ -104,7 +104,7 @@ For future improvements, consider expanding the experiment with additional model
 
 ## Appendix
 
-In this section, I put all of my results into 4 tables for differetn models. For each grid, there are two values separated by a comma, where the formeris the value of coverage rate and the latter is the value of average size.
+In this section, I put all of my results into 4 tables for different models. For each grid, there are two values separated by a comma, where the former is the value of coverage rate and the latter is the value of average size.
 
 **resnet18_fashionminist**
 
